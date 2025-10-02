@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>🎨 畅指动画 - iOS安装</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
+        }
+        
+        .container {
+            background: rgba(255, 255, 255, 0.95);
+            border-radius: 20px;
+            padding: 30px;
+            max-width: 400px;
+            width: 100%;
+            text-align: center;
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+            backdrop-filter: blur(10px);
+        }
+        
+        .app-icon {
+            width: 100px;
+            height: 100px;
+            background: linear-gradient(45deg, #FF6B35, #FFD23F);
+            border-radius: 22px;
+            margin: 0 auto 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 50px;
+            box-shadow: 0 10px 30px rgba(255, 107, 53, 0.3);
+        }
+        
+        h1 {
+            color: #333;
+            margin-bottom: 10px;
+            font-size: 28px;
+            font-weight: 700;
+        }
+        
+        .subtitle {
+            color: #666;
+            margin-bottom: 30px;
+            font-size: 16px;
+        }
+        
+        .download-section {
+            margin-bottom: 30px;
+        }
+        
+        .download-btn {
+            background: linear-gradient(45deg, #667eea, #764ba2);
+            color: white;
+            border: none;
+            padding: 15px 30px;
+            border-radius: 25px;
+            font-size: 18px;
+            font-weight: 600;
+            cursor: pointer;
+            width: 100%;
+            margin-bottom: 15px;
+            transition: all 0.3s ease;
+            text-decoration: none;
+            display: inline-block;
+        }
+        
+        .download-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 10px 25px rgba(102, 126, 234, 0.4);
+        }
+        
+        .file-info {
+            background: rgba(255, 255, 255, 0.7);
+            border-radius: 15px;
+            padding: 20px;
+            margin-bottom: 20px;
+            text-align: left;
+        }
+        
+        .file-item {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 0;
+            border-bottom: 1px solid rgba(0,0,0,0.1);
+        }
+        
+        .file-item:last-child {
+            border-bottom: none;
+        }
+        
+        .file-name {
+            font-weight: 600;
+            color: #333;
+        }
+        
+        .file-size {
+            color: #666;
+            font-size: 14px;
+        }
+        
+        .instructions {
+            background: rgba(255, 245, 157, 0.3);
+            border-radius: 15px;
+            padding: 20px;
+            margin-top: 20px;
+            text-align: left;
+        }
+        
+        .step {
+            margin-bottom: 10px;
+            display: flex;
+            align-items: flex-start;
+        }
+        
+        .step-number {
+            background: #667eea;
+            color: white;
+            width: 24px;
+            height: 24px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 12px;
+            font-weight: bold;
+            margin-right: 10px;
+            flex-shrink: 0;
+        }
+        
+        .warning {
+            background: rgba(255, 193, 7, 0.1);
+            border: 1px solid rgba(255, 193, 7, 0.3);
+            border-radius: 10px;
+            padding: 15px;
+            margin-top: 20px;
+            color: #856404;
+        }
+        
+        .android-section {
+            display: none;
+            background: rgba(76, 175, 80, 0.1);
+            border: 1px solid rgba(76, 175, 80, 0.3);
+            border-radius: 15px;
+            padding: 20px;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="app-icon">🎨</div>
+        <h1>畅指动画</h1>
+        <p class="subtitle">精美的跨平台动画演示应用</p>
+        
+        <!-- iOS部分 -->
+        <div id="ios-section">
+            <div class="file-info">
+                <h3 style="margin-bottom: 15px; color: #333;">📱 iOS应用文件</h3>
+                <div class="file-item">
+                    <span class="file-name">iosApp.ipa</span>
+                    <span class="file-size">~15MB</span>
+                </div>
+            </div>
+            
+            <div class="download-section">
+                <a href="./iosApp.ipa" class="download-btn" download="畅指动画.ipa">
+                    📥 下载 iOS 应用 (.ipa)
+                </a>
+            </div>
+            
+            <div class="instructions">
+                <h3 style="margin-bottom: 15px; color: #333;">📋 安装步骤：</h3>
+                <div class="step">
+                    <div class="step-number">1</div>
+                    <div>点击上方按钮下载 .ipa 文件</div>
+                </div>
+                <div class="step">
+                    <div class="step-number">2</div>
+                    <div>使用 AltStore、Sideloadly 或 Xcode 安装</div>
+                </div>
+                <div class="step">
+                    <div class="step-number">3</div>
+                    <div>安装后前往：设置 → 通用 → VPN与设备管理</div>
+                </div>
+                <div class="step">
+                    <div class="step-number">4</div>
+                    <div>找到开发者应用，点击"信任"</div>
+                </div>
+                <div class="step">
+                    <div class="step-number">5</div>
+                    <div>返回桌面，打开"畅指动画"应用</div>
+                </div>
+            </div>
+            
+            <div class="warning">
+                ⚠️ <strong>注意：</strong>此应用使用开发者证书签名，需要使用第三方工具安装，或者在设备上手动信任开发者。
+            </div>
+        </div>
+        
+        <!-- Android部分 -->
+        <div id="android-section" class="android-section">
+            <h3 style="margin-bottom: 15px; color: #2e7d32;">🤖 Android 用户</h3>
+            <p style="margin-bottom: 15px;">您正在使用Android设备，请下载Android版本：</p>
+            <a href="./畅指动画demo.apk" class="download-btn" download="畅指动画.apk">
+                📥 下载 Android APK
+            </a>
+        </div>
+    </div>
+
+    <script>
+        // 检测设备类型并显示相应内容
+        function detectDevice() {
+            const userAgent = navigator.userAgent || navigator.vendor || window.opera;
+            
+            if (/android/i.test(userAgent)) {
+                // Android设备
+                document.getElementById('ios-section').style.display = 'none';
+                document.getElementById('android-section').style.display = 'block';
+            } else {
+                // iOS或其他设备，默认显示iOS内容
+                document.getElementById('ios-section').style.display = 'block';
+                document.getElementById('android-section').style.display = 'none';
+            }
+        }
+        
+        // 页面加载完成后检测设备
+        document.addEventListener('DOMContentLoaded', detectDevice);
+        
+        // 检查文件是否存在
+        function checkFileExists(url, callback) {
+            fetch(url, { method: 'HEAD' })
+                .then(response => callback(response.ok))
+                .catch(() => callback(false));
+        }
+        
+        // 页面加载后检查文件
+        window.addEventListener('load', function() {
+            checkFileExists('./iosApp.ipa', function(exists) {
+                if (!exists) {
+                    document.querySelector('.download-btn').innerHTML = '❌ 文件未找到 - 请联系开发者';
+                    document.querySelector('.download-btn').style.background = '#dc3545';
+                    document.querySelector('.download-btn').onclick = function(e) {
+                        e.preventDefault();
+                        alert('IPA文件未找到，请确保文件路径正确或联系开发者。');
+                    };
+                }
+            });
+        });
+    </script>
+</body>
+</html>
